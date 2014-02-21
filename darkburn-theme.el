@@ -146,14 +146,14 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((t (:foreground ,darkburn-green-1
                       :background ,darkburn-bg-05
                       :box (:line-width -1 :style released-button)))))
-   `(region ((,class (:background ,darkburn-bg-1))
+   `(region ((,class (:background ,darkburn-green-2))
              (t :inverse-video t)))
    `(secondary-selection ((t (:background ,darkburn-bg+2))))
    `(trailing-whitespace ((t (:background ,darkburn-red))))
    `(vertical-border ((t (:foreground ,darkburn-fg))))
 ;;;;; font lock
    `(font-lock-builtin-face ((t (:foreground ,darkburn-fg :weight bold))))
-   `(font-lock-comment-face ((t (:foreground ,darkburn-green))))
+   `(font-lock-comment-face ((t (:foreground ,darkburn-green :italic t))))       ;; DB
    `(font-lock-comment-delimiter-face ((t (:foreground ,darkburn-green-1))))
    `(font-lock-constant-face ((t (:foreground ,darkburn-green+4))))
    `(font-lock-doc-face ((t (:foreground ,darkburn-green+2))))
