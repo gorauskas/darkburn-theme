@@ -1,10 +1,11 @@
-;;; zenburn-theme.el --- A low contrast color theme for Emacs.
+;;; darkburn-theme.el --- A not-so-low contrast color theme for Emacs.
+;; Modified: 2014-02-20 16:46:10
 
-;; Copyright (C) 2011-2013 Bozhidar Batsov
+;; Copyright (C) 2014 Jonas Gorauskas
 
-;; Author: Bozhidar Batsov <bozhidar@batsov.com>
-;; URL: http://github.com/bbatsov/zenburn-emacs
-;; Version: 2.1
+;; Author: Jonas Gorauskas <jgorauskas@gmail.com>
+;; URL: http://github.com/gorauskas/darkburn-theme
+;; Version: 0.1
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -21,17 +22,18 @@
 
 ;;; Commentary:
 
-;; A port of the popular Vim theme Zenburn for Emacs 24, built on top
-;; of the new built-in theme support in Emacs 24.
+;; A mod of the Zenburn theme for Emacs 24 by Bozhidar Batsov to make
+;; backgrounds a little darker. The original can be found on github at:
+;; http://github.com/bbatsov/zenburn-emacs
 
 ;;; Credits:
 
-;; Jani Nurminen created the original theme for vim on such this port
-;; is based.
+;; Bozhidar Batsov deserves all the credit!
+;; I only changed a few colors.
 
 ;;; Code:
 
-(deftheme darkburn "The Zenburn color theme")
+(deftheme darkburn "The Darkburn color theme")
 
 ;;; Color Palette
 
@@ -73,7 +75,7 @@
     ("darkburn-blue-4"   . "#4C7073")
     ("darkburn-blue-5"   . "#366060")
     ("darkburn-magenta"  . "#DC8CC3"))
-  "List of Zenburn colors.
+  "List of Darkburn colors.
 Each element has the form (NAME . HEX).
 
 `+N' suffixes indicate a color is lighter.
