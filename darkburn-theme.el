@@ -1,5 +1,5 @@
 ;;; darkburn-theme.el --- A not-so-low contrast color theme for Emacs.
-;; Modified: 2014-02-20 16:46:10
+;; Modified: 2014-02-20 16:59:58
 
 ;; Copyright (C) 2014 Jonas Gorauskas
 
@@ -492,9 +492,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(helm-mu-contacts-address-face ((t (:foreground ,darkburn-fg-1 :background ,darkburn-bg-15))))    ;; DB
    `(helm-mu-contacts-name-face ((t (:foreground ,darkburn-fg :background ,darkburn-bg-15))))         ;; DB
 ;;;;; hl-line-mode
-   `(hl-line-face ((,class (:background ,darkburn-bg-05))
+   `(hl-line-face ((,class (:background ,darkburn-bg-1))                                              ;; DB
                    (t :weight bold)))
-   `(hl-line ((,class (:background ,darkburn-bg-05)) ; old emacsen
+   `(hl-line ((,class (:background ,darkburn-bg-1)) ; old emacsen                                     ;; DB
               (t :weight bold)))
 ;;;;; hl-sexp
    `(hl-sexp-face ((,class (:background ,darkburn-bg+1))
