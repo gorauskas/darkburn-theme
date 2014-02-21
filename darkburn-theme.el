@@ -146,7 +146,7 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((t (:foreground ,darkburn-green-1
                       :background ,darkburn-bg-05
                       :box (:line-width -1 :style released-button)))))
-   `(region ((,class (:background ,darkburn-green-2))
+   `(region ((,class (:background ,darkburn-green-2))                           ;; DB
              (t :inverse-video t)))
    `(secondary-selection ((t (:background ,darkburn-bg+2))))
    `(trailing-whitespace ((t (:background ,darkburn-red))))
@@ -190,9 +190,9 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;; Third-party
 ;;;;; ace-jump
    `(ace-jump-face-background
-     ((t (:foreground ,darkburn-fg-1 :background ,darkburn-bg-15 :inverse-video nil))))
+     ((t (:foreground ,darkburn-fg-1 :background ,darkburn-bg-15 :inverse-video nil))))      ;; DB
    `(ace-jump-face-foreground
-     ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-15 :inverse-video nil))))
+     ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-15 :inverse-video nil))))   ;; DB
 ;;;;; anzu
    `(anzu-mode-line ((t (:foreground ,darkburn-cyan :weight bold))))
 ;;;;; full-ack
@@ -214,7 +214,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(popup-tip-face ((t (:background ,darkburn-yellow-2 :foreground ,darkburn-bg-2))))
    `(popup-scroll-bar-foreground-face ((t (:background ,darkburn-blue-5))))
    `(popup-scroll-bar-background-face ((t (:background ,darkburn-bg-1))))
-   `(popup-isearch-match ((t (:background ,darkburn-bg-15 :foreground ,darkburn-fg))))
+   `(popup-isearch-match ((t (:background ,darkburn-bg-15 :foreground ,darkburn-fg))))     ;; DB
 ;;;;; android mode
    `(android-mode-debug-face ((t (:foreground ,darkburn-green+1))))
    `(android-mode-error-face ((t (:foreground ,darkburn-orange :weight bold))))
@@ -293,8 +293,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ediff-odd-diff-B ((t (:background ,darkburn-bg+2))))
    `(ediff-odd-diff-C ((t (:background ,darkburn-bg+2))))
 ;;;;; ert
-   `(ert-test-result-expected ((t (:foreground ,darkburn-green+4 :background ,darkburn-bg-15))))
-   `(ert-test-result-unexpected ((t (:foreground ,darkburn-red :background ,darkburn-bg-15))))
+   `(ert-test-result-expected ((t (:foreground ,darkburn-green+4 :background ,darkburn-bg-15))))       ;; DB
+   `(ert-test-result-unexpected ((t (:foreground ,darkburn-red :background ,darkburn-bg-15))))         ;; DB
 ;;;;; eshell
    `(eshell-prompt ((t (:foreground ,darkburn-yellow :weight bold))))
    `(eshell-ls-archive ((t (:foreground ,darkburn-red-1 :weight bold))))
@@ -367,7 +367,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(erc-nick-msg-face ((t (:inherit erc-default))))
    `(erc-notice-face ((t (:foreground ,darkburn-green))))
    `(erc-pal-face ((t (:foreground ,darkburn-orange :weight bold))))
-   `(erc-prompt-face ((t (:foreground ,darkburn-orange :background ,darkburn-bg-15 :weight bold))))
+   `(erc-prompt-face ((t (:foreground ,darkburn-orange :background ,darkburn-bg-15 :weight bold))))  ;; DB
    `(erc-timestamp-face ((t (:foreground ,darkburn-green+4))))
    `(erc-underline-face ((t (:underline t))))
 ;;;;; git-gutter
@@ -447,7 +447,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; helm
    `(helm-header
      ((t (:foreground ,darkburn-green
-                      :background ,darkburn-bg-15
+                      :background ,darkburn-bg-15           ;; DB
                       :underline nil
                       :box nil))))
    `(helm-source-header
@@ -460,35 +460,35 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(helm-selection-line ((t (:background ,darkburn-bg+1))))
    `(helm-visible-mark ((t (:foreground ,darkburn-bg :background ,darkburn-yellow-2))))
    `(helm-candidate-number ((t (:foreground ,darkburn-green+4 :background ,darkburn-bg-1))))
-   `(helm-separator ((t (:foreground ,darkburn-red :background ,darkburn-bg-15))))
-   `(helm-time-zone-current ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-15))))
-   `(helm-time-zone-home ((t (:foreground ,darkburn-red :background ,darkburn-bg-15))))
-   `(helm-bookmark-addressbook ((t (:foreground ,darkburn-orange :background ,darkburn-bg-15))))
+   `(helm-separator ((t (:foreground ,darkburn-red :background ,darkburn-bg-15))))                    ;; DB
+   `(helm-time-zone-current ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-15))))        ;; DB
+   `(helm-time-zone-home ((t (:foreground ,darkburn-red :background ,darkburn-bg-15))))               ;; DB
+   `(helm-bookmark-addressbook ((t (:foreground ,darkburn-orange :background ,darkburn-bg-15))))      ;; DB
    `(helm-bookmark-directory ((t (:foreground nil :background nil :inherit helm-ff-directory))))
    `(helm-bookmark-file ((t (:foreground nil :background nil :inherit helm-ff-file))))
-   `(helm-bookmark-gnus ((t (:foreground ,darkburn-magenta :background ,darkburn-bg-15))))
-   `(helm-bookmark-info ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-15))))
-   `(helm-bookmark-man ((t (:foreground ,darkburn-yellow :background ,darkburn-bg-15))))
-   `(helm-bookmark-w3m ((t (:foreground ,darkburn-magenta :background ,darkburn-bg-15))))
-   `(helm-buffer-not-saved ((t (:foreground ,darkburn-red :background ,darkburn-bg-15))))
-   `(helm-buffer-process ((t (:foreground ,darkburn-cyan :background ,darkburn-bg-15))))
-   `(helm-buffer-saved-out ((t (:foreground ,darkburn-fg :background ,darkburn-bg-15))))
-   `(helm-buffer-size ((t (:foreground ,darkburn-fg-1 :background ,darkburn-bg-15))))
-   `(helm-ff-directory ((t (:foreground ,darkburn-cyan :background ,darkburn-bg-15 :weight bold))))
-   `(helm-ff-file ((t (:foreground ,darkburn-fg :background ,darkburn-bg-15 :weight normal))))
-   `(helm-ff-executable ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-15 :weight normal))))
-   `(helm-ff-invalid-symlink ((t (:foreground ,darkburn-red :background ,darkburn-bg-15 :weight bold))))
-   `(helm-ff-symlink ((t (:foreground ,darkburn-yellow :background ,darkburn-bg-15 :weight bold))))
+   `(helm-bookmark-gnus ((t (:foreground ,darkburn-magenta :background ,darkburn-bg-15))))            ;; DB
+   `(helm-bookmark-info ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-15))))            ;; DB
+   `(helm-bookmark-man ((t (:foreground ,darkburn-yellow :background ,darkburn-bg-15))))              ;; DB
+   `(helm-bookmark-w3m ((t (:foreground ,darkburn-magenta :background ,darkburn-bg-15))))             ;; DB
+   `(helm-buffer-not-saved ((t (:foreground ,darkburn-red :background ,darkburn-bg-15))))             ;; DB
+   `(helm-buffer-process ((t (:foreground ,darkburn-cyan :background ,darkburn-bg-15))))              ;; DB
+   `(helm-buffer-saved-out ((t (:foreground ,darkburn-fg :background ,darkburn-bg-15))))              ;; DB
+   `(helm-buffer-size ((t (:foreground ,darkburn-fg-1 :background ,darkburn-bg-15))))                 ;; DB
+   `(helm-ff-directory ((t (:foreground ,darkburn-cyan :background ,darkburn-bg-15 :weight bold))))   ;; DB
+   `(helm-ff-file ((t (:foreground ,darkburn-fg :background ,darkburn-bg-15 :weight normal))))        ;; DB
+   `(helm-ff-executable ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-15 :weight normal)))) ;; DB
+   `(helm-ff-invalid-symlink ((t (:foreground ,darkburn-red :background ,darkburn-bg-15 :weight bold))))  ;; DB
+   `(helm-ff-symlink ((t (:foreground ,darkburn-yellow :background ,darkburn-bg-15 :weight bold))))       ;; DB
    `(helm-ff-prefix ((t (:foreground ,darkburn-bg :background ,darkburn-yellow :weight normal))))
-   `(helm-grep-cmd-line ((t (:foreground ,darkburn-cyan :background ,darkburn-bg-15))))
-   `(helm-grep-file ((t (:foreground ,darkburn-fg :background ,darkburn-bg-15))))
-   `(helm-grep-finish ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-15))))
-   `(helm-grep-lineno ((t (:foreground ,darkburn-fg-1 :background ,darkburn-bg-15))))
+   `(helm-grep-cmd-line ((t (:foreground ,darkburn-cyan :background ,darkburn-bg-15))))               ;; DB
+   `(helm-grep-file ((t (:foreground ,darkburn-fg :background ,darkburn-bg-15))))                     ;; DB
+   `(helm-grep-finish ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-15))))              ;; DB
+   `(helm-grep-lineno ((t (:foreground ,darkburn-fg-1 :background ,darkburn-bg-15))))                 ;; DB
    `(helm-grep-match ((t (:foreground nil :background nil :inherit helm-match))))
-   `(helm-grep-running ((t (:foreground ,darkburn-red :background ,darkburn-bg-15))))
-   `(helm-moccur-buffer ((t (:foreground ,darkburn-cyan :background ,darkburn-bg-15))))
-   `(helm-mu-contacts-address-face ((t (:foreground ,darkburn-fg-1 :background ,darkburn-bg-15))))
-   `(helm-mu-contacts-name-face ((t (:foreground ,darkburn-fg :background ,darkburn-bg-15))))
+   `(helm-grep-running ((t (:foreground ,darkburn-red :background ,darkburn-bg-15))))                 ;; DB
+   `(helm-moccur-buffer ((t (:foreground ,darkburn-cyan :background ,darkburn-bg-15))))               ;; DB
+   `(helm-mu-contacts-address-face ((t (:foreground ,darkburn-fg-1 :background ,darkburn-bg-15))))    ;; DB
+   `(helm-mu-contacts-name-face ((t (:foreground ,darkburn-fg :background ,darkburn-bg-15))))         ;; DB
 ;;;;; hl-line-mode
    `(hl-line-face ((,class (:background ,darkburn-bg-05))
                    (t :weight bold)))
@@ -543,7 +543,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ledger-font-reconciler-pending-face ((t (:foreground ,darkburn-orange :weight normal))))
    `(ledger-font-report-clickable-face ((t (:foreground ,darkburn-orange :weight normal))))
 ;;;;; linum-mode
-   `(linum ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-15))))
+   `(linum ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-15))))          ;; DB
 ;;;;; macrostep
    `(macrostep-gensym-1
      ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-1))))
@@ -615,7 +615,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(mew-face-eof-message ((t (:foreground ,darkburn-green))))
    `(mew-face-eof-part ((t (:foreground ,darkburn-yellow))))
 ;;;;; mic-paren
-   `(paren-face-match ((t (:foreground ,darkburn-cyan :background ,darkburn-bg-15 :weight bold))))
+   `(paren-face-match ((t (:foreground ,darkburn-cyan :background ,darkburn-bg-15 :weight bold))))      ;; DB
    `(paren-face-mismatch ((t (:foreground ,darkburn-bg :background ,darkburn-magenta :weight bold))))
    `(paren-face-no-match ((t (:foreground ,darkburn-bg :background ,darkburn-red :weight bold))))
 ;;;;; mingus
@@ -729,8 +729,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(proof-queue-face ((t (:background ,darkburn-red-4))))
    `(proof-region-mouse-highlight-face ((t (:inherit proof-mouse-highlight-face))))
    `(proof-script-highlight-error-face ((t (:background ,darkburn-red-2))))
-   `(proof-tacticals-name-face ((t (:inherit font-lock-constant-face :foreground nil :background ,darkburn-bg-15))))
-   `(proof-tactics-name-face ((t (:inherit font-lock-constant-face :foreground nil :background ,darkburn-bg-15))))
+   `(proof-tacticals-name-face ((t (:inherit font-lock-constant-face :foreground nil :background ,darkburn-bg-15))))   ;; DB
+   `(proof-tactics-name-face ((t (:inherit font-lock-constant-face :foreground nil :background ,darkburn-bg-15))))     ;; DB
    `(proof-warning-face ((t (:foreground ,darkburn-bg :background ,darkburn-yellow-1))))
 ;;;;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,darkburn-fg))))
@@ -822,9 +822,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(speedbar-tag-face ((t (:foreground ,darkburn-yellow))))
 ;;;;; tabbar
    `(tabbar-button ((t (:foreground ,darkburn-fg
-                                    :background ,darkburn-bg-15))))
+                                    :background ,darkburn-bg-15))))     ;; DB
    `(tabbar-selected ((t (:foreground ,darkburn-fg
-                                      :background ,darkburn-bg-15
+                                      :background ,darkburn-bg-15       ;; DB
                                       :box (:line-width -1 :style pressed-button)))))
    `(tabbar-unselected ((t (:foreground ,darkburn-fg
                                         :background ,darkburn-bg+1
@@ -865,7 +865,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(w3m-header-line-location-title ((t (:foreground ,darkburn-yellow
                                                      :underline t :weight bold))))
    '(w3m-history-current-url ((t (:inherit match))))
-   `(w3m-lnum ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-15))))
+   `(w3m-lnum ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-15))))   ;; DB
    `(w3m-lnum-match ((t (:background ,darkburn-bg-1
                                      :foreground ,darkburn-orange
                                      :weight bold))))
@@ -889,7 +889,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(web-mode-string-face ((t (:inherit ,font-lock-string-face))))
    `(web-mode-type-face ((t (:inherit ,font-lock-type-face))))
    `(web-mode-variable-name-face ((t (:inherit ,font-lock-variable-name-face))))
-   `(web-mode-server-background-face ((t (:background ,darkburn-bg-15))))
+   `(web-mode-server-background-face ((t (:background ,darkburn-bg-15))))         ;; DB
    `(web-mode-server-comment-face ((t (:inherit web-mode-comment-face))))
    `(web-mode-server-string-face ((t (:inherit web-mode-string-face))))
    `(web-mode-symbol-face ((t (:inherit font-lock-constant-face))))
@@ -901,7 +901,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(whitespace-tab ((t (:background ,darkburn-red-1))))
    `(whitespace-newline ((t (:foreground ,darkburn-bg+1))))
    `(whitespace-trailing ((t (:background ,darkburn-red))))
-   `(whitespace-line ((t (:background ,darkburn-bg-15 :foreground ,darkburn-magenta))))
+   `(whitespace-line ((t (:background ,darkburn-bg-15 :foreground ,darkburn-magenta))))              ;; DB
    `(whitespace-space-before-tab ((t (:background ,darkburn-orange :foreground ,darkburn-orange))))
    `(whitespace-indentation ((t (:background ,darkburn-yellow :foreground ,darkburn-red))))
    `(whitespace-empty ((t (:background ,darkburn-yellow))))
