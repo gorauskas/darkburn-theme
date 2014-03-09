@@ -567,6 +567,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-section-title ((t (:foreground ,darkburn-yellow :weight bold))))
    `(magit-branch ((t (:foreground ,darkburn-orange :weight bold))))
    `(magit-item-highlight ((t (:background ,darkburn-bg+1 :bold nil))))
+   `(magit-log-author ((t (:foreground, darkburn-orange))))
+   `(magit-log-sha1 ((t (:foreground, darkburn-orange))))
 ;;;;; egg
    `(egg-text-base ((t (:foreground ,darkburn-fg))))
    `(egg-help-header-1 ((t (:foreground ,darkburn-yellow))))
