@@ -251,7 +251,7 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((,class (:background ,darkburn-bg+2 :foreground ,darkburn-fg :bold t))
       (t (:background ,darkburn-fg :foreground ,darkburn-bg :bold t))))
 ;;;;; dim-autoload
-   `(dim-autoload-cookie-line :foreground ,darkburn-bg+1)
+   `(dim-autoload-cookie-line ((t :foreground ,darkburn-bg+1)))
 ;;;;; dired+
    `(diredp-display-msg ((t (:foreground ,darkburn-blue))))
    `(diredp-compressed-file-suffix ((t (:foreground ,darkburn-orange))))
