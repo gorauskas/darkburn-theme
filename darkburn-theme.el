@@ -261,10 +261,10 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((,class (:background ,darkburn-bg+2 :foreground ,darkburn-fg :bold t))
       (t (:background ,darkburn-fg :foreground ,darkburn-bg :bold t))))
 ;;;;; diff-hl
-   `(diff-hl-change ((,class (:foreground ,zenburn-cyan))))
-   `(diff-hl-delete ((,class (:foreground ,zenburn-red+1))))
-   `(diff-hl-insert ((,class (:foreground ,zenburn-green+2))))
-   `(diff-hl-unknown ((,class (:foreground ,zenburn-yellow))))
+   `(diff-hl-change ((,class (:foreground ,darkburn-blue-2 :background ,darkburn-bg-05))))
+   `(diff-hl-delete ((,class (:foreground ,darkburn-red+1 :background ,darkburn-bg-05))))
+   `(diff-hl-insert ((,class (:foreground ,darkburn-green+1 :background ,darkburn-bg-05))))
+   `(diff-hl-unknown ((,class (:foreground ,darkburn-yellow :background ,darkburn-bg-05))))
 ;;;;; dim-autoload
    `(dim-autoload-cookie-line ((t :foreground ,darkburn-bg+1)))
 ;;;;; dired+
@@ -581,8 +581,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; magit
    `(magit-item-highlight ((t (:background ,darkburn-bg+1))))
    `(magit-section-title ((t (:foreground ,darkburn-yellow :weight bold))))
-   `(magit-process-ok ((t (:foreground ,zenburn-green :weight bold))))
-   `(magit-process-ng ((t (:foreground ,zenburn-red :weight bold))))
+   `(magit-process-ok ((t (:foreground ,darkburn-green :weight bold))))
+   `(magit-process-ng ((t (:foreground ,darkburn-red :weight bold))))
    `(magit-branch ((t (:foreground ,darkburn-blue :weight bold))))
    `(magit-log-author ((t (:foreground, darkburn-orange))))
    `(magit-log-sha1 ((t (:foreground, darkburn-orange))))
