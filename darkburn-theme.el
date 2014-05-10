@@ -221,6 +221,16 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(android-mode-info-face ((t (:foreground ,darkburn-fg))))
    `(android-mode-verbose-face ((t (:foreground ,darkburn-green))))
    `(android-mode-warning-face ((t (:foreground ,darkburn-yellow))))
+;;;;; company-mode
+   `(company-tooltip ((t (:foreground ,darkburn-yellow :background ,darkburn-bg+1))))
+   `(company-tooltip-selection ((t (:foreground ,darkburn-fg :background ,darkburn-bg-1))))
+   `(company-tooltip-mouse ((t (:background ,darkburn-bg-1))))
+   `(company-tooltip-common ((t (:foreground ,darkburn-yellow :background ,darkburn-bg-1))))
+   `(company-tooltip-common-selection ((t (:background ,darkburn-bg-1))))
+   `(company-scrollbar-fg ((t (:background ,darkburn-green+1))))
+   `(company-scrollbar-bg ((t (:background ,darkburn-bg-1))))
+   `(company-preview ((t (:background ,darkburn-green+1))))
+   `(company-preview-common ((t (:background ,darkburn-bg-1))))
 ;;;;; bm
    `(bm-face ((t (:background ,darkburn-yellow-1 :foreground ,darkburn-bg))))
    `(bm-fringe-face ((t (:background ,darkburn-yellow-1 :foreground ,darkburn-bg))))
