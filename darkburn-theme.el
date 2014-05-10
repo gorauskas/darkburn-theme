@@ -574,9 +574,11 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(macrostep-macro-face
      ((t (:underline t))))
 ;;;;; magit
-   `(magit-section-title ((t (:foreground ,darkburn-yellow :weight bold))))
-   `(magit-branch ((t (:foreground ,darkburn-orange :weight bold))))
    `(magit-item-highlight ((t (:background ,darkburn-bg+1))))
+   `(magit-section-title ((t (:foreground ,darkburn-yellow :weight bold))))
+   `(magit-process-ok ((t (:foreground ,zenburn-green :weight bold))))
+   `(magit-process-ng ((t (:foreground ,zenburn-red :weight bold))))
+   `(magit-branch ((t (:foreground ,darkburn-blue :weight bold))))
    `(magit-log-author ((t (:foreground, darkburn-orange))))
    `(magit-log-sha1 ((t (:foreground, darkburn-orange))))
 ;;;;; egg
