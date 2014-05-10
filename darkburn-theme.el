@@ -260,6 +260,11 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(diff-file-header
      ((,class (:background ,darkburn-bg+2 :foreground ,darkburn-fg :bold t))
       (t (:background ,darkburn-fg :foreground ,darkburn-bg :bold t))))
+;;;;; diff-hl
+   `(diff-hl-change ((,class (:foreground ,zenburn-cyan))))
+   `(diff-hl-delete ((,class (:foreground ,zenburn-red+1))))
+   `(diff-hl-insert ((,class (:foreground ,zenburn-green+2))))
+   `(diff-hl-unknown ((,class (:foreground ,zenburn-yellow))))
 ;;;;; dim-autoload
    `(dim-autoload-cookie-line ((t :foreground ,darkburn-bg+1)))
 ;;;;; dired+
