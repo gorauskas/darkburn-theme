@@ -880,6 +880,11 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(undo-tree-visualizer-unmodified-face ((t (:foreground ,darkburn-cyan))))
 ;;;;; volatile-highlights
    `(vhl/default-face ((t (:background ,darkburn-bg-05))))
+;;;;; elfeed
+   `(elfeed-search-date-face ((t (:foreground ,darkburn-yellow-1 :underline t
+                                              :weight bold))))
+   `(elfeed-search-tag-face ((t (:foreground ,darkburn-green))))
+   `(elfeed-search-feed-face ((t (:foreground ,darkburn-cyan))))
 ;;;;; emacs-w3m
    `(w3m-anchor ((t (:foreground ,darkburn-yellow :underline t
                                  :weight bold))))
