@@ -44,6 +44,7 @@
     ("darkburn-bg-1"     . "#2B2B2B")
     ("darkburn-bg-05"    . "#383838")
     ("darkburn-bg"       . "#3F3F3F")
+    ("darkburn-bg+05"    . "#494949")
     ("darkburn-bg+1"     . "#4F4F4F")
     ("darkburn-bg+2"     . "#5F5F5F")
     ("darkburn-bg+3"     . "#6F6F6F")
@@ -579,7 +580,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(macrostep-macro-face
      ((t (:underline t))))
 ;;;;; magit
-   `(magit-item-highlight ((t (:background ,darkburn-bg+1))))
+   `(magit-item-highlight ((t (:background ,darkburn-bg+05))))
    `(magit-section-title ((t (:foreground ,darkburn-yellow :weight bold))))
    `(magit-process-ok ((t (:foreground ,darkburn-green :weight bold))))
    `(magit-process-ng ((t (:foreground ,darkburn-red :weight bold))))
