@@ -584,8 +584,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-process-ok ((t (:foreground ,darkburn-green :weight bold))))
    `(magit-process-ng ((t (:foreground ,darkburn-red :weight bold))))
    `(magit-branch ((t (:foreground ,darkburn-blue :weight bold))))
-   `(magit-log-author ((t (:foreground, darkburn-orange))))
-   `(magit-log-sha1 ((t (:foreground, darkburn-orange))))
+   `(magit-log-author ((t (:foreground ,darkburn-orange))))
+   `(magit-log-sha1 ((t (:foreground ,darkburn-orange))))
 ;;;;; egg
    `(egg-text-base ((t (:foreground ,darkburn-fg))))
    `(egg-help-header-1 ((t (:foreground ,darkburn-yellow))))
