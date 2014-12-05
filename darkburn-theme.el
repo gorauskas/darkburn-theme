@@ -253,9 +253,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(diff-changed ((t (:foreground ,darkburn-yellow))))
    `(diff-removed ((,class (:foreground ,darkburn-red :background nil))
                    (t (:foreground ,darkburn-red-3 :background nil))))
-   `(diff-refine-added ((t :inherit diff-added :weight bold)))
-   `(diff-refine-change ((t :inherit diff-changed :weight bold)))
-   `(diff-refine-removed ((t :inherit diff-removed :weight bold)))
+   `(diff-refine-added ((t (:inherit diff-added :weight bold))))
+   `(diff-refine-change ((t (:inherit diff-changed :weight bold))))
+   `(diff-refine-removed ((t (:inherit diff-removed :weight bold))))
    `(diff-header ((,class (:background ,darkburn-bg+2))
                   (t (:background ,darkburn-fg :foreground ,darkburn-bg))))
    `(diff-file-header
