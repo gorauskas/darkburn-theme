@@ -1,6 +1,6 @@
 ;;; darkburn-theme.el --- A not-so-low contrast color theme for Emacs.
 
-;; Copyright 2014 Jonas Gorauskas
+;; Copyright 2014, 2015 Jonas Gorauskas
 
 ;; Author: Jonas Gorauskas <jgorauskas@gmail.com>
 ;; URL: http://github.com/gorauskas/darkburn-theme
@@ -1043,10 +1043,6 @@ This requires library `rainbow-mode'.")
                    (file-name-directory load-file-name))))
 
 (provide-theme 'darkburn)
-
-;;;###autoload
-(add-to-list 'safe-local-eval-forms
-             '(when (require 'rainbow-mode nil t) (rainbow-mode 1)))
 
 ;; Local Variables:
 ;; no-byte-compile: t
