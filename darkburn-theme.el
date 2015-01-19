@@ -509,6 +509,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(helm-moccur-buffer ((t (:foreground ,darkburn-cyan :background ,darkburn-bg-15))))               ;; DB
    `(helm-mu-contacts-address-face ((t (:foreground ,darkburn-fg-1 :background ,darkburn-bg-15))))    ;; DB
    `(helm-mu-contacts-name-face ((t (:foreground ,darkburn-fg :background ,darkburn-bg-15))))         ;; DB
+;;;;; helm-swoop
+   `(helm-swoop-target-line-face ((t (:foreground ,darkburn-fg :background ,darkburn-bg+1))))
+   `(helm-swoop-target-word-face ((t (:foreground ,darkburn-yellow :background ,darkburn-bg+2 :weight bold))))
 ;;;;; hl-line-mode
    `(hl-line-face ((,class (:background ,darkburn-bg-1))                                              ;; DB
                    (t :weight bold)))
