@@ -124,6 +124,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(compilation-mode-line-exit ((t (:foreground ,darkburn-green+2 :weight bold))))
    `(compilation-mode-line-fail ((t (:foreground ,darkburn-red :weight bold))))
    `(compilation-mode-line-run ((t (:foreground ,darkburn-yellow :weight bold))))
+;;;;; completions
+   `(completions-annotations ((t (:foreground ,darkburn-fg-1))))
 ;;;;; grep
    `(grep-context-face ((t (:foreground ,darkburn-fg))))
    `(grep-error-face ((t (:foreground ,darkburn-red-1 :weight bold :underline t))))
@@ -224,6 +226,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(android-mode-warning-face ((t (:foreground ,darkburn-yellow))))
 ;;;;; company-mode
    `(company-tooltip ((t (:foreground ,darkburn-fg :background ,darkburn-bg+1))))
+   `(company-tooltip-annotation ((t (:foreground ,darkburn-orange :background ,darkburn-bg+1))))
    `(company-tooltip-selection ((t (:foreground ,darkburn-fg :background ,darkburn-bg-1))))
    `(company-tooltip-mouse ((t (:background ,darkburn-bg-1))))
    `(company-tooltip-common ((t (:foreground ,darkburn-green+2))))
