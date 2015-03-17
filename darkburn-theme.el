@@ -240,6 +240,15 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(bm-fringe-face ((t (:background ,darkburn-yellow-1 :foreground ,darkburn-bg))))
    `(bm-fringe-persistent-face ((t (:background ,darkburn-green-1 :foreground ,darkburn-bg))))
    `(bm-persistent-face ((t (:background ,darkburn-green-1 :foreground ,darkburn-bg))))
+;;;;; circe
+   `(circe-highlight-nick-face ((t (:foreground ,darkburn-cyan))))
+   `(circe-my-message-face ((t (:foreground ,darkburn-fg))))
+   `(circe-fool-face ((t (:foreground ,darkburn-red+1))))
+   `(circe-topic-diff-removed-face ((t (:foreground ,darkburn-red :weight bold))))
+   `(circe-originator-face ((t (:foreground ,darkburn-fg))))
+   `(circe-server-face ((t (:foreground ,darkburn-green))))
+   `(circe-topic-diff-new-face ((t (:foreground ,darkburn-orange :weight bold))))
+   `(circe-prompt-face ((t (:foreground ,darkburn-orange :background ,darkburn-bg :weight bold))))
 ;;;;; clojure-test-mode
    `(clojure-test-failure-face ((t (:foreground ,darkburn-orange :weight bold :underline t))))
    `(clojure-test-error-face ((t (:foreground ,darkburn-red :weight bold :underline t))))
@@ -567,6 +576,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ledger-font-reconciler-cleared-face ((t (:foreground ,darkburn-fg :weight normal))))
    `(ledger-font-reconciler-pending-face ((t (:foreground ,darkburn-orange :weight normal))))
    `(ledger-font-report-clickable-face ((t (:foreground ,darkburn-orange :weight normal))))
+;;;;; lui
+   `(lui-time-stamp-face ((t (:foreground ,darkburn-blue-1))))
+   `(lui-hilight-face ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg))))
+   `(lui-button-face ((t (:inherit hover-highlight))))
 ;;;;; linum-mode
    `(linum ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-15))))          ;; DB
 ;;;;; macrostep
