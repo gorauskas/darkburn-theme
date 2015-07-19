@@ -532,6 +532,12 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; hl-sexp
    `(hl-sexp-face ((,class (:background ,darkburn-bg+1))
                    (t :weight bold)))
+;;;;; hydra
+   `(hydra-face-red ((t (:foreground ,darkburn-red-1 :background ,darkburn-bg))))
+   `(hydra-face-amaranth ((t (:foreground ,darkburn-red-3 :background ,darkburn-bg))))
+   `(hydra-face-blue ((t (:foreground ,darkburn-blue :background ,darkburn-bg))))
+   `(hydra-face-pink ((t (:foreground ,darkburn-magenta :background ,darkburn-bg))))
+   `(hydra-face-teal ((t (:foreground ,darkburn-cyan :background ,darkburn-bg))))
 ;;;;; ido-mode
    `(ido-first-match ((t (:foreground ,darkburn-yellow :weight bold))))
    `(ido-only-match ((t (:foreground ,darkburn-orange :weight bold))))
