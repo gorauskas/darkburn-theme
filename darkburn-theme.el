@@ -780,6 +780,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(proof-tacticals-name-face ((t (:inherit font-lock-constant-face :foreground nil :background ,darkburn-bg-15))))   ;; DB
    `(proof-tactics-name-face ((t (:inherit font-lock-constant-face :foreground nil :background ,darkburn-bg-15))))     ;; DB
    `(proof-warning-face ((t (:foreground ,darkburn-bg :background ,darkburn-yellow-1))))
+;;;;; racket-mode
+   `(racket-keyword-argument-face ((t (:inherit font-lock-constant-face))))
+   `(racket-selfeval-face ((t (:inherit font-lock-type-face))))
 ;;;;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,darkburn-fg))))
    `(rainbow-delimiters-depth-2-face ((t (:foreground ,darkburn-green+4))))
