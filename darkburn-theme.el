@@ -224,6 +224,11 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(android-mode-info-face ((t (:foreground ,darkburn-fg))))
    `(android-mode-verbose-face ((t (:foreground ,darkburn-green))))
    `(android-mode-warning-face ((t (:foreground ,darkburn-yellow))))
+;;;;; avy
+   `(avy-background-face
+     ((t (:foreground ,darkburn-fg-1 :background ,darkburn-bg :inverse-video nil))))
+   `(avy-lead-face
+     ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg :inverse-video nil))))
 ;;;;; company-mode
    `(company-tooltip ((t (:foreground ,darkburn-fg :background ,darkburn-bg+1))))
    `(company-tooltip-annotation ((t (:foreground ,darkburn-orange :background ,darkburn-bg+1))))
