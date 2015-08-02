@@ -227,6 +227,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; avy
    `(avy-background-face
      ((t (:foreground ,darkburn-fg-1 :background ,darkburn-bg :inverse-video nil))))
+   `(avy-lead-face-0
+     ((t (:foreground ,darkburn-green+3 :background ,darkburn-bg :inverse-video nil))))
    `(avy-lead-face
      ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg :inverse-video nil))))
 ;;;;; company-mode
