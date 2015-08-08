@@ -109,6 +109,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(highlight ((t (:background ,darkburn-bg-05))))
    `(success ((t (:foreground ,darkburn-green :weight bold))))
    `(warning ((t (:foreground ,darkburn-orange :weight bold))))
+   `(tooltip ((t (:foreground ,darkburn-fg :background ,darkburn-bg+1))))
 ;;;;; compilation
    `(compilation-column-face ((t (:foreground ,darkburn-yellow))))
    `(compilation-enter-directory-face ((t (:foreground ,darkburn-green))))
