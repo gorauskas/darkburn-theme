@@ -912,6 +912,25 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; show-paren
    `(show-paren-mismatch ((t (:foreground ,darkburn-red+1 :background ,darkburn-bg+3 :weight bold))))
    `(show-paren-match ((t (:background ,darkburn-bg+3 :weight bold))))
+;;;;; smart-mode-line
+   ;; use (setq sml/theme nil) to enable Zenburn for sml
+   `(sml/global ((,class (:foreground ,darkburn-fg :weight bold))))
+   `(sml/modes ((,class (:foreground ,darkburn-yellow :weight bold))))
+   `(sml/minor-modes ((,class (:foreground ,darkburn-fg-1 :weight bold))))
+   `(sml/filename ((,class (:foreground ,darkburn-yellow :weight bold))))
+   `(sml/line-number ((,class (:foreground ,darkburn-blue :weight bold))))
+   `(sml/col-number ((,class (:foreground ,darkburn-blue+1 :weight bold))))
+   `(sml/position-percentage ((,class (:foreground ,darkburn-blue-1 :weight bold))))
+   `(sml/prefix ((,class (:foreground ,darkburn-orange))))
+   `(sml/git ((,class (:foreground ,darkburn-green+3))))
+   `(sml/process ((,class (:weight bold))))
+   `(sml/sudo ((,class  (:foreground ,darkburn-orange :weight bold))))
+   `(sml/read-only ((,class (:foreground ,darkburn-red-2))))
+   `(sml/outside-modified ((,class (:foreground ,darkburn-orange))))
+   `(sml/modified ((,class (:foreground ,darkburn-red))))
+   `(sml/vc-edited ((,class (:foreground ,darkburn-green+2))))
+   `(sml/charging ((,class (:foreground ,darkburn-green+4))))
+   `(sml/discharging ((,class (:foreground ,darkburn-red+1))))
 ;;;;; smartparens
    `(sp-show-pair-mismatch-face ((t (:foreground ,darkburn-red+1 :background ,darkburn-bg+3 :weight bold))))
    `(sp-show-pair-match-face ((t (:background ,darkburn-bg+3 :weight bold))))
