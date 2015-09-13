@@ -259,10 +259,6 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(circe-server-face ((t (:foreground ,darkburn-green))))
    `(circe-topic-diff-new-face ((t (:foreground ,darkburn-orange :weight bold))))
    `(circe-prompt-face ((t (:foreground ,darkburn-orange :background ,darkburn-bg :weight bold))))
-;;;;; clojure-test-mode
-   `(clojure-test-failure-face ((t (:foreground ,darkburn-orange :weight bold :underline t))))
-   `(clojure-test-error-face ((t (:foreground ,darkburn-red :weight bold :underline t))))
-   `(clojure-test-success-face ((t (:foreground ,darkburn-green+1 :weight bold :underline t))))
 ;;;;; coq
    `(coq-solve-tactics-face ((t (:foreground nil :inherit font-lock-constant-face))))
 ;;;;; ctable
