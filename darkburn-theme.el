@@ -249,7 +249,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(bm-fringe-persistent-face ((t (:background ,darkburn-green-1 :foreground ,darkburn-bg))))
    `(bm-persistent-face ((t (:background ,darkburn-green-1 :foreground ,darkburn-bg))))
 ;;;;; cider
-   `(cider-result-overlay-face ((t (:foreground ,darkburn-fg-1))))
+   `(cider-result-overlay-face ((t (:foreground ,darkburn-fg-1 :background unspecified))))
 ;;;;; circe
    `(circe-highlight-nick-face ((t (:foreground ,darkburn-cyan))))
    `(circe-my-message-face ((t (:foreground ,darkburn-fg))))
@@ -1101,6 +1101,10 @@ Also bind `class' to ((class color) (min-colors 89))."
                                           ,darkburn-blue ,darkburn-magenta ,darkburn-cyan ,darkburn-fg])
 ;;;;; fill-column-indicator
    `(fci-rule-color ,darkburn-bg-05)
+;;;;; nrepl-client
+   `(nrepl-message-colors
+     '(,darkburn-red ,darkburn-orange ,darkburn-yellow ,darkburn-green ,darkburn-green+4
+                    ,darkburn-cyan ,darkburn-blue+1 ,darkburn-magenta))
 ;;;;; vc-annotate
    `(vc-annotate-color-map
      '(( 20. . ,darkburn-red-1)
