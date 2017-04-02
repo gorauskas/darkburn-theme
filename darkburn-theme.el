@@ -601,7 +601,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(js2-private-function-call ((t (:foreground ,darkburn-cyan))))
    `(js2-function-call ((t (:foreground ,darkburn-cyan))))
    `(js2-private-member ((t (:foreground ,darkburn-blue-1))))
-   `(js2-keywords e((t (:foreground ,darkburn-magenta))))
+   `(js2-keywords ((t (:foreground ,darkburn-magenta))))
 ;;;;; jabber-mode
    `(jabber-roster-user-away ((t (:foreground ,darkburn-green+2))))
    `(jabber-roster-user-online ((t (:foreground ,darkburn-blue-1))))
