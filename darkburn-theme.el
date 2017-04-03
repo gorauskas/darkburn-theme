@@ -235,6 +235,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; company-mode
    `(company-tooltip ((t (:foreground ,darkburn-fg :background ,darkburn-bg+1))))
    `(company-tooltip-annotation ((t (:foreground ,darkburn-orange :background ,darkburn-bg+1))))
+   `(company-tooltip-annotation-selection ((t (:foreground ,darkburn-orange :background ,darkburn-bg-1))))
    `(company-tooltip-selection ((t (:foreground ,darkburn-fg :background ,darkburn-bg-1))))
    `(company-tooltip-mouse ((t (:background ,darkburn-bg-1))))
    `(company-tooltip-common ((t (:foreground ,darkburn-green+2))))
