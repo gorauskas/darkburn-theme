@@ -1135,6 +1135,12 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(wl-highlight-summary-displaying-face ((t (:underline t :weight bold))))
 ;;;;; which-func-mode
    `(which-func ((t (:foreground ,darkburn-green+4))))
+;;;;; xcscope
+   `(cscope-file-face ((t (:foreground ,darkburn-yellow :weight bold))))
+   `(cscope-function-face ((t (:foreground ,darkburn-cyan :weight bold))))
+   `(cscope-line-number-face ((t (:foreground ,darkburn-red :weight bold))))
+   `(cscope-mouse-face ((t (:foreground ,darkburn-bg :background ,darkburn-blue+1))))
+   `(cscope-separator-face ((t (:foreground ,darkburn-red :weight bold :underline t :overline t))))
 ;;;;; yascroll
    `(yascroll:thumb-text-area ((t (:background ,darkburn-bg-1))))
    `(yascroll:thumb-fringe ((t (:background ,darkburn-bg-1 :foreground ,darkburn-bg-1))))
