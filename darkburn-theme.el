@@ -290,10 +290,9 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((,class (:background ,darkburn-bg+2 :foreground ,darkburn-fg :bold t))
       (t (:background ,darkburn-fg :foreground ,darkburn-bg :bold t))))
 ;;;;; diff-hl
-   `(diff-hl-change ((,class (:foreground ,darkburn-blue-2 :background ,darkburn-bg-05))))
-   `(diff-hl-delete ((,class (:foreground ,darkburn-red+1 :background ,darkburn-bg-05))))
-   `(diff-hl-insert ((,class (:foreground ,darkburn-green+1 :background ,darkburn-bg-05))))
-   `(diff-hl-unknown ((,class (:foreground ,darkburn-yellow :background ,darkburn-bg-05))))
+   `(diff-hl-change ((,class (:foreground ,darkburn-blue :background ,darkburn-blue-2))))
+   `(diff-hl-delete ((,class (:foreground ,darkburn-red+1 :background ,darkburn-red-1))))
+   `(diff-hl-insert ((,class (:foreground ,darkburn-green+1 :background ,darkburn-green-1))))
 ;;;;; dim-autoload
    `(dim-autoload-cookie-line ((t :foreground ,darkburn-bg+1)))
 ;;;;; dired+
