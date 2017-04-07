@@ -229,9 +229,13 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(avy-background-face
      ((t (:foreground ,darkburn-fg-1 :background ,darkburn-bg :inverse-video nil))))
    `(avy-lead-face-0
-     ((t (:foreground ,darkburn-green+3 :background ,darkburn-bg :inverse-video nil))))
+     ((t (:foreground ,darkburn-green+3 :background ,darkburn-bg :inverse-video nil :weight bold))))
+   `(avy-lead-face-1
+     ((t (:foreground ,darkburn-yellow :background ,darkburn-bg :inverse-video nil :weight bold))))
+   `(avy-lead-face-2
+     ((t (:foreground ,darkburn-red+1 :background ,darkburn-bg :inverse-video nil :weight bold))))
    `(avy-lead-face
-     ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg :inverse-video nil))))
+     ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg :inverse-video nil :weight bold))))
 ;;;;; company-mode
    `(company-tooltip ((t (:foreground ,darkburn-fg :background ,darkburn-bg+1))))
    `(company-tooltip-annotation ((t (:foreground ,darkburn-orange :background ,darkburn-bg+1))))
@@ -658,15 +662,15 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-diff-file-heading           ((t (:weight bold))))
    `(magit-diff-file-heading-highlight ((t (:background ,darkburn-bg+05  :weight bold))))
    `(magit-diff-file-heading-selection ((t (:background ,darkburn-bg+05
-                                            :foreground ,darkburn-orange :weight bold))))
+                                                        :foreground ,darkburn-orange :weight bold))))
    `(magit-diff-hunk-heading           ((t (:background ,darkburn-bg+1))))
    `(magit-diff-hunk-heading-highlight ((t (:background ,darkburn-bg+2))))
    `(magit-diff-hunk-heading-selection ((t (:background ,darkburn-bg+2
-                                            :foreground ,darkburn-orange))))
+                                                        :foreground ,darkburn-orange))))
    `(magit-diff-lines-heading          ((t (:background ,darkburn-orange
-                                            :foreground ,darkburn-bg+2))))
+                                                        :foreground ,darkburn-bg+2))))
    `(magit-diff-context-highlight      ((t (:background ,darkburn-bg+05
-                                            :foreground "grey70"))))
+                                                        :foreground "grey70"))))
    `(magit-diffstat-added   ((t (:foreground ,darkburn-green+4))))
    `(magit-diffstat-removed ((t (:foreground ,darkburn-red))))
 ;;;;;; popup
@@ -1025,17 +1029,17 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(term-color-black ((t (:foreground ,darkburn-bg
                                        :background ,darkburn-bg-1))))
    `(term-color-red ((t (:foreground ,darkburn-red-2
-                                       :background ,darkburn-red-4))))
+                                     :background ,darkburn-red-4))))
    `(term-color-green ((t (:foreground ,darkburn-green
                                        :background ,darkburn-green+2))))
    `(term-color-yellow ((t (:foreground ,darkburn-orange
-                                       :background ,darkburn-yellow))))
+                                        :background ,darkburn-yellow))))
    `(term-color-blue ((t (:foreground ,darkburn-blue-1
                                       :background ,darkburn-blue-4))))
    `(term-color-magenta ((t (:foreground ,darkburn-magenta
                                          :background ,darkburn-red))))
    `(term-color-cyan ((t (:foreground ,darkburn-cyan
-                                       :background ,darkburn-blue))))
+                                      :background ,darkburn-blue))))
    `(term-color-white ((t (:foreground ,darkburn-fg
                                        :background ,darkburn-fg-1))))
    '(term-default-fg-color ((t (:inherit term-color-white))))
