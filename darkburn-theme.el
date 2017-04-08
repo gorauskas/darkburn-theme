@@ -854,6 +854,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-mode-line-clock-overrun ((t (:foreground ,darkburn-bg :background ,darkburn-red-1))))
    `(org-ellipsis ((t (:foreground ,darkburn-yellow-1 :underline t))))
    `(org-footnote ((t (:foreground ,darkburn-cyan :underline t))))
+   `(org-document-title ((t (:foreground ,darkburn-blue))))
+   `(org-document-info ((t (:foreground ,darkburn-blue))))
    `(org-habit-ready-face ((t :background ,darkburn-green)))
    `(org-habit-alert-face ((t :background ,darkburn-yellow-1 :foreground ,darkburn-bg)))
    `(org-habit-clear-face ((t :background ,darkburn-blue-3)))
