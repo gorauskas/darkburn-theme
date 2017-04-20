@@ -1,10 +1,10 @@
 ;;; darkburn-theme.el --- A not-so-low contrast color theme for Emacs.
 
-;; Copyright 2014, 2015 Jonas Gorauskas
+;; Copyright 2014 - 2017 Jonas Gorauskas
 
 ;; Author: Jonas Gorauskas <jgorauskas@gmail.com>
 ;; URL: http://github.com/gorauskas/darkburn-theme
-;; Version: 0.4
+;; Version: 0.5
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -259,6 +259,17 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(circe-server-face ((t (:foreground ,darkburn-green))))
    `(circe-topic-diff-new-face ((t (:foreground ,darkburn-orange :weight bold))))
    `(circe-prompt-face ((t (:foreground ,darkburn-orange :background ,darkburn-bg :weight bold))))
+;;;;; context-coloring
+   `(context-coloring-level-0-face ((t :foreground ,darkburn-fg)))
+   `(context-coloring-level-1-face ((t :foreground ,darkburn-cyan)))
+   `(context-coloring-level-2-face ((t :foreground ,darkburn-green+4)))
+   `(context-coloring-level-3-face ((t :foreground ,darkburn-yellow)))
+   `(context-coloring-level-4-face ((t :foreground ,darkburn-orange)))
+   `(context-coloring-level-5-face ((t :foreground ,darkburn-magenta)))
+   `(context-coloring-level-6-face ((t :foreground ,darkburn-blue+1)))
+   `(context-coloring-level-7-face ((t :foreground ,darkburn-green+2)))
+   `(context-coloring-level-8-face ((t :foreground ,darkburn-yellow-2)))
+   `(context-coloring-level-9-face ((t :foreground ,darkburn-red+1)))
 ;;;;; coq
    `(coq-solve-tactics-face ((t (:foreground nil :inherit font-lock-constant-face))))
 ;;;;; ctable
