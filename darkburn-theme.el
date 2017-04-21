@@ -557,6 +557,16 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(hydra-face-blue ((t (:foreground ,darkburn-blue :background ,darkburn-bg))))
    `(hydra-face-pink ((t (:foreground ,darkburn-magenta :background ,darkburn-bg))))
    `(hydra-face-teal ((t (:foreground ,darkburn-cyan :background ,darkburn-bg))))
+;;;;; ivy
+   `(ivy-confirm-face ((t (:foreground ,zenburn-green :background ,zenburn-bg))))
+   `(ivy-match-required-face ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
+   `(ivy-remote ((t (:foreground ,zenburn-blue :background ,zenburn-bg))))
+   `(ivy-subdir ((t (:foreground ,zenburn-yellow :background ,zenburn-bg))))
+   `(ivy-current-match ((t (:foreground ,zenburn-yellow :weight bold :underline t))))
+   `(ivy-minibuffer-match-face-1 ((t (:background ,zenburn-bg+1))))
+   `(ivy-minibuffer-match-face-2 ((t (:background ,zenburn-green-1))))
+   `(ivy-minibuffer-match-face-3 ((t (:background ,zenburn-green))))
+   `(ivy-minibuffer-match-face-4 ((t (:background ,zenburn-green+1))))
 ;;;;; ido-mode
    `(ido-first-match ((t (:foreground ,darkburn-yellow :weight bold))))
    `(ido-only-match ((t (:foreground ,darkburn-orange :weight bold))))
@@ -607,6 +617,14 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(lui-button-face ((t (:inherit hover-highlight))))
 ;;;;; linum-mode
    `(linum ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-15))))          ;; DB
+;;;;; ruler-mode
+   `(ruler-mode-column-number ((t (:inherit 'ruler-mode-default :foreground ,zenburn-fg))))
+   `(ruler-mode-fill-column ((t (:inherit 'ruler-mode-default :foreground ,zenburn-yellow))))
+   `(ruler-mode-goal-column ((t (:inherit 'ruler-mode-fill-column))))
+   `(ruler-mode-comment-column ((t (:inherit 'ruler-mode-fill-column))))
+   `(ruler-mode-tab-stop ((t (:inherit 'ruler-mode-fill-column))))
+   `(ruler-mode-current-column ((t (:foreground ,zenburn-yellow :box t))))
+   `(ruler-mode-default ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
 ;;;;; macrostep
    `(macrostep-gensym-1
      ((t (:foreground ,darkburn-green+2 :background ,darkburn-bg-1))))
