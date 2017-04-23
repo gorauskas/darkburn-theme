@@ -7,7 +7,7 @@ makes this fork obsolete. See
 commit
 [b057fa5b2e0ad3a10d15709a3748156dd5282909](https://github.com/bbatsov/zenburn-emacs/commit/b057fa5b2e0ad3a10d15709a3748156dd5282909).
 
-The original Zenburn theme now has a easy customization feature. To make the
+The original Zenburn theme now has an easy customization feature. To make the
 changes from this theme on the original, use the following:
 
     (defvar zenburn-override-colors-alist
