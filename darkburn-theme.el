@@ -6,6 +6,19 @@
 ;; URL: http://github.com/gorauskas/darkburn-theme
 ;; Version: 0.5
 
+;; # ATTENTION: This fork is no lorger maintained !!!
+
+;; On February of 2016 a patch was merged into the original Zenburn theme that
+;; makes this fork obsolete. See commit
+;; https://github.com/bbatsov/zenburn-emacs/commit/b057fa5b2e0ad3a10d15709a3748156dd5282909
+
+;; The original Zenburn theme now has an easy customization feature. To make the
+;; changes from this theme on the original, use the following:
+
+;;     (defvar zenburn-override-colors-alist
+;;       '(("zenburn-bg" . "#111111")))
+;;     (load-theme 'zenburn t)
+
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
 ;; the Free Software Foundation, either version 3 of the License, or
